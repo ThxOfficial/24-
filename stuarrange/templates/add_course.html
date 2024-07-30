@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+    font-family: Arial, sans-serif;
+            text-align: center;
+            
+            background-image: url('static/3/20240629154612.png'); /* 添加背景图片 */
+            background-size: cover;
+            background-attachment: fixed;
+  }
+  h2{
+    text-align: center;
+    font-size: 40px;
+  }
+  .btn{
+    text-align: center;
+  
+
+  }
+  .text{
+    font-size: 30px;
+  }
+  
+</style>
+<body>
+    <h2>添加课程</h2>
+    <div class="btn">
+
+    <form action="/cadd_success" method="post">
+      <input type="hidden" name="action" value="add_course">
+      <div><label for="courseId">课&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp号：</label>
+      <input type="text" id="courseId" name="courseId"></div>
+      <div><label for="courseName">课&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp程：</label>
+      <input type="text" id="courseName" name="courseName"></div>
+      <div><label for="credit">学&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp分：</label>
+      <input type="number" id="credit" name="credit"></div>
+      <div><label for="teacher">授课教师：</label>
+      <input type="text" id="teacher" name="teacher"></div>
+      <div><label for="semester">开课学期：</label>
+      <input type="text" id="semester" name="semester"></div>
+      <div><label for="assessmentMethod">考核方式：</label>
+      <input type="text" id="assessmentMethod" name="assessmentMethod"></div>
+      <div><label for="evaluate">课程评价：</label>
+      <input type="text" id="evaluated" name="evaluate"></div>
+      <button  type="submit" >确定</button>
+    </form>
+  </div>
+  <a href="/adm_index" style="position: absolute; top: 0; right: 0; padding: 10px; background-color: #5c6fed; color: #fff; border-radius: 5px;">退出登录</a>
+  <a href="/course_adm" style="position: absolute; top: 0; left: 0; padding: 10px; background-color: #5c6fed; color: #fff; border-radius: 5px;">返回</a>
+</body>
+</html>

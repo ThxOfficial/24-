@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+    font-family: Arial, sans-serif;
+            text-align: center;
+            
+            background-image: url('static/3/20240629154612.png'); /* 添加背景图片 */
+            background-size: cover;
+            background-attachment: fixed;
+  }
+  h2{
+    text-align: center;
+    font-size: 40px;
+  }
+  .btn{
+    text-align: center;
+  
+
+  }
+  .text{
+    font-size: 30px;
+  }
+  .butt{
+    margin: 10px;
+  }
+    </style>
+</head>
+<body>
+    <h2>删除学生</h2>
+    <div class="btn">
+    <form action="/sdel_success" method="post">
+      <input type="hidden" name="action" value="add_course">
+      <div><label for="courseId">学号：</label>
+      <input type="text" id="courseId" name="courseId"></div>
+      <button type="submit" class="butt">确定</button>
+    </form>
+  </div>
+  <a href="/adm_index" style="position: absolute; top: 0; right: 0; padding: 10px; background-color: #5c6fed; color: #fff; border-radius: 5px;">退出登录</a>
+  <a href="/stu_adm" style="position: absolute; top: 0; left: 0; padding: 10px; background-color: #5c6fed; color: #fff; border-radius: 5px;">返回</a>
+</body>
+</html>

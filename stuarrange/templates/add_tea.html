@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加教师</title>
+</head>
+<style>
+  body{
+    font-family: Arial, sans-serif;
+            text-align: center;
+            
+            background-image: url('static/3/20240629154612.png'); /* 添加背景图片 */
+            background-size: cover;
+            background-attachment: fixed;
+  }
+  h2{
+    text-align: center;
+    font-size: 40px;
+  }
+  .btn{
+    text-align: center;
+  
+
+  }
+  .text{
+    font-size: 30px;
+  }
+  
+</style>
+<body>
+    <h2>添加教师</h2>
+    <div class="btn">
+
+    <form action="/tadd_success" method="post">
+      <input type="hidden" name="action" value="add_course">
+      <div><label for="courseId">教&nbsp&nbsp师&nbsp&nbsp号：</label>
+      <input type="text" id="courseId" name="courseId"></div>
+      <div><label for="courseName">姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：</label>
+      <input type="text" id="courseName" name="courseName"></div>
+      <div><label for="credit">性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别：</label>
+      <input type="text" id="credit" name="credit"></div>
+      <div><label for="teacher">科&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp目：</label>
+      <input type="text" id="teacher" name="teacher"></div>
+      <div><label for="semester">职&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp位：</label>
+      <input type="text" id="semester" name="semester"></div>
+      <div><label for="assessmentMethod">入职时间：</label>
+      <input type="text" id="assessmentMethod" name="assessmentMethod"></div>
+      <div><label for="evaluate">联系电话：</label>
+      <input type="text" id="evaluated" name="evaluate"></div>
+      <button  type="submit" >确定</button>
+    </form>
+  </div>
+  <a href="/adm_index" style="position: absolute; top: 0; right: 0; padding: 10px; background-color: #5c6fed; color: #fff; border-radius: 5px;">退出登录</a>
+  <a href="/tea_adm" style="position: absolute; top: 0; left: 0; padding: 10px; background-color: #5c6fed; color: #fff; border-radius: 5px;">返回</a>
+</body>
+</html>

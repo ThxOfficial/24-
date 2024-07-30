@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/static" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/templates" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/webthings" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/webthings/1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/webthings/work(1)/work/1" vcs="Git" />
+  </component>
+</project>
